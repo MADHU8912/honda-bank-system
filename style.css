@@ -1,17 +1,23 @@
 body{
-font-family: Arial;
-text-align:center;
+font-family:Arial;
 background:#f2f2f2;
+text-align:center;
+}
+
+h1{
+background:red;
+color:white;
+padding:15px;
 }
 
 input{
 padding:10px;
-width:200px;
+width:250px;
 }
 
 button{
 padding:10px 20px;
-background:green;
+background:red;
 color:white;
 border:none;
 }
