@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Honda Bank Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Honda Bank Dashboard</h1>
+
+<h3>Create Bank Account</h3>
+
+<input id="name" placeholder="Customer Name"><br><br>
+
+<input id="balance" placeholder="Account Balance"><br><br>
+
+<input id="branch" placeholder="Branch Name"><br><br>
+
+<button onclick="create()">Create Account</button>
+
+<h2>Accounts</h2>
+
+<ul id="list"></ul>
+
+<script>
+
+function create(){
+
+var name=document.getElementById("name").value;
+var balance=document.getElementById("balance").value;
+var branch=document.getElementById("branch").value;
+
+var li=document.createElement("li");
+
+li.innerHTML="Name: "+name+" | Balance: "+balance+" | Branch: "+branch;
+
+document.getElementById("list").appendChild(li);
+
+}
+
+</script>
+
+</body>
+</html>

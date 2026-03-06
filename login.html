@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Honda Bank Admin</h1>
+
+<input id="user" placeholder="Admin Username"><br><br>
+<input id="pass" type="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<script>
+
+function login(){
+
+var u = document.getElementById("user").value;
+var p = document.getElementById("pass").value;
+
+if(u=="admin" && p=="1234")
+{
+window.location="dashboard.html";
+}
+else
+{
+alert("Wrong Login");
+}
+
+}
+
+</script>
+
+</body>
+</html>
