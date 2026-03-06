@@ -9,13 +9,32 @@
 
 <h1>HONDA BANK</h1>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Honda-logo.svg" width="200">
+<h2>Admin Login</h2>
 
-<h2>Welcome to Honda Bank System</h2>
+<input id="user" placeholder="Username"><br><br>
+<input id="pass" type="password" placeholder="Password"><br><br>
 
-<a href="login.html">
-<button>Admin Login</button>
-</a>
+<button onclick="login()">Login</button>
+
+<script>
+
+function login(){
+
+var u=document.getElementById("user").value;
+var p=document.getElementById("pass").value;
+
+if(u=="admin" && p=="1234")
+{
+window.location="dashboard.html";
+}
+else
+{
+alert("Wrong Login");
+}
+
+}
+
+</script>
 
 </body>
 </html>
