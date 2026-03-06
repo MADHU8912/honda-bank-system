@@ -3,43 +3,45 @@
 <head>
 <title>Honda Bank Dashboard</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 
-<body>
+<body onload="loadAccounts()">
 
 <h1>Honda Bank Dashboard</h1>
 
-<h3>Create Bank Account</h3>
+<h3>Create Account</h3>
 
 <input id="name" placeholder="Customer Name"><br><br>
+<input id="branch" placeholder="Branch"><br><br>
+<input id="balance" placeholder="Balance"><br><br>
 
-<input id="balance" placeholder="Account Balance"><br><br>
+<button onclick="createAccount()">Create Account</button>
 
-<input id="branch" placeholder="Branch Name"><br><br>
+<hr>
 
-<button onclick="create()">Create Account</button>
+<h3>Search Account</h3>
 
-<h2>Accounts</h2>
+<input id="search" placeholder="Account Number">
+<button onclick="searchAccount()">Search</button>
 
-<ul id="list"></ul>
+<div id="result"></div>
 
-<script>
+<hr>
 
-function create(){
+<table border="1" width="80%" align="center">
 
-var name=document.getElementById("name").value;
-var balance=document.getElementById("balance").value;
-var branch=document.getElementById("branch").value;
+<tr>
+<th>Account</th>
+<th>Name</th>
+<th>Branch</th>
+<th>Balance</th>
+<th>Action</th>
+</tr>
 
-var li=document.createElement("li");
+<tbody id="accounts"></tbody>
 
-li.innerHTML="Name: "+name+" | Balance: "+balance+" | Branch: "+branch;
-
-document.getElementById("list").appendChild(li);
-
-}
-
-</script>
+</table>
 
 </body>
 </html>
