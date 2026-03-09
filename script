@@ -94,3 +94,31 @@ alert("Transfer Successful");
 }
 
 </script>
+function fundTransfer() {
+
+let from = parseInt(document.getElementById("fromAccount").value);
+let to = parseInt(document.getElementById("toAccount").value);
+let amount = parseFloat(document.getElementById("transferAmount").value);
+
+let fromAcc = accounts.find(acc => acc.number === from);
+let toAcc = accounts.find(acc => acc.number === to);
+
+if (!fromAcc || !toAcc) {
+    alert("Account not found");
+    return;
+}
+
+if (fromAcc.balance < amount) {
+    alert("Insufficient Balance");
+    return;
+}
+
+fromAcc.balance -= amount;
+toAcc.balance += amount;
+
+document.getElementById("bal-" + from).innerText = fromAcc.balance;
+document.getElementById("bal-" + to).innerText = toAcc.balance;
+
+alert("Fund Transfer Successful");
+
+}
