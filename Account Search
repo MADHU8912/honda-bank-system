@@ -1,0 +1,13 @@
+function searchAccount(accountNo){
+
+let acc = accounts.find(a=>a.number===accountNo);
+
+if(!acc){
+console.log("Account not found");
+return;
+}
+
+console.log("Account Details:");
+console.log(acc);
+
+}
