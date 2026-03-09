@@ -1,0 +1,7 @@
+function transactionHistory(){
+
+console.log("Transaction History");
+
+transactions.forEach(t => console.log(t));
+
+}
