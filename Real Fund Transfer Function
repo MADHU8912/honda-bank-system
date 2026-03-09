@@ -1,0 +1,33 @@
+function fundTransfer(){
+
+let from = parseInt(document.getElementById("fromAccount").value);
+let to = parseInt(document.getElementById("toAccount").value);
+let amount = parseInt(document.getElementById("transferAmount").value);
+
+let sender = accountsDB.find(a => a.number === from);
+let receiver = accountsDB.find(a => a.number === to);
+
+if(!sender || !receiver){
+alert("Account not found");
+return;
+}
+
+if(sender.status !== "Active" || receiver.status !== "Active"){
+alert("Account is inactive");
+return;
+}
+
+if(sender.balance < amount){
+alert("Insufficient balance");
+return;
+}
+
+sender.balance -= amount;
+receiver.balance += amount;
+
+document.getElementById("bal"+from).innerText = sender.balance;
+document.getElementById("bal"+to).innerText = receiver.balance;
+
+alert("Transfer Successful");
+
+}
