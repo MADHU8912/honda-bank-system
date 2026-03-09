@@ -1,0 +1,96 @@
+<script>
+
+let acc = 1000;
+let accounts = [];
+
+window.onload = function () {
+
+let table = document.getElementById("accounts");
+
+for(let i=1;i<=100;i++){
+
+acc++;
+
+let account = {
+number: acc,
+name: "Customer "+i,
+branch: "Main Branch",
+balance: 1000 + (i*50)
+};
+
+accounts.push(account);
+
+addRow(account);
+
+}
+
+};
+
+function addRow(account){
+
+let table=document.getElementById("accounts");
+
+let row=`
+<tr id="row-${account.number}">
+<td>${account.number}</td>
+<td>${account.name}</td>
+<td>${account.branch}</td>
+<td id="bal-${account.number}">${account.balance}</td>
+</tr>
+`;
+
+table.innerHTML += row;
+
+}
+
+function createAccount(){
+
+let name=document.getElementById("name").value;
+let branch=document.getElementById("branch").value;
+let balance=parseInt(document.getElementById("balance").value);
+
+acc++;
+
+let account={
+number:acc,
+name:name,
+branch:branch,
+balance:balance
+};
+
+accounts.push(account);
+
+addRow(account);
+
+}
+
+function transfer(){
+
+let from=parseInt(document.getElementById("fromAcc").value);
+let to=parseInt(document.getElementById("toAcc").value);
+let amount=parseInt(document.getElementById("amount").value);
+
+let fromAcc=accounts.find(a=>a.number===from);
+let toAcc=accounts.find(a=>a.number===to);
+
+if(!fromAcc || !toAcc){
+alert("Account not found");
+return;
+}
+
+if(fromAcc.balance < amount){
+alert("Insufficient balance");
+return;
+}
+
+fromAcc.balance -= amount;
+toAcc.balance += amount;
+
+document.getElementById("bal-"+from).innerText = fromAcc.balance;
+document.getElementById("bal-"+to).innerText = toAcc.balance;
+
+alert("Transfer Successful");
+
+}
+
+</script>
