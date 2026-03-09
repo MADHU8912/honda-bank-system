@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Honda Bank</title>
+<title>LVR Worknet Bank</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>HONDA BANK</h1>
+<h1>LVR WORKNET BANK</h1>
 
+<div class="box">
 <h2>Admin Login</h2>
 
 <input id="user" placeholder="Username"><br><br>
@@ -16,24 +17,19 @@
 
 <button onclick="login()">Login</button>
 
+</div>
+
 <script>
-
 function login(){
-
 var u=document.getElementById("user").value;
 var p=document.getElementById("pass").value;
 
-if(u=="admin" && p=="1234")
-{
+if(u=="admin" && p=="1234"){
 window.location="dashboard.html";
+}else{
+alert("Invalid Login");
 }
-else
-{
-alert("Wrong Login");
 }
-
-}
-
 </script>
 
 </body>
