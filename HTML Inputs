@@ -1,5 +1,4 @@
 <input id="fromAccount" placeholder="From Account Number">
 <input id="toAccount" placeholder="To Account Number">
 <input id="amount" placeholder="Amount">
-
 <button onclick="fundTransfer()">Transfer</button>
