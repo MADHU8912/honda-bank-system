@@ -1,0 +1,32 @@
+function createAccount(){
+
+let name=document.getElementById("name").value;
+let branch=document.getElementById("branch").value;
+let balance=parseInt(document.getElementById("balance").value);
+
+acc++;
+
+let account={
+number:acc,
+name:name,
+branch:branch,
+balance:balance,
+status:"Active"
+};
+
+accountsDB.push(account);
+
+let table=document.getElementById("accounts");
+
+let row=`
+<tr id="row${account.number}">
+<td>${account.number}</td>
+<td>${name}</td>
+<td>${branch}</td>
+<td id="bal${account.number}">${balance}</td>
+</tr>
+`;
+
+table.innerHTML+=row;
+
+}
