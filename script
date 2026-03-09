@@ -122,3 +122,5 @@ document.getElementById("bal-" + to).innerText = toAcc.balance;
 alert("Fund Transfer Successful");
 
 }
+let acc = 1000;
+let accountsDB = [];
