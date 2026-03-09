@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Admin Login</title>
+<title>Honda Bank Admin Login</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+text-align:center;
+padding-top:100px;
+}
+
+.login-box{
+background:white;
+width:300px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0px 0px 10px #999;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:8px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+width:95%;
+padding:10px;
+background:#0066cc;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#004999;
+}
+
+h1{
+color:#333;
+}
+</style>
+
 </head>
 
 <body>
 
-<h1>Honda Bank Admin</h1>
+<div class="login-box">
 
-<input id="user" placeholder="Admin Username"><br><br>
-<input id="pass" type="password" placeholder="Password"><br><br>
+<h1>Honda Bank</h1>
+<h3>Admin Login</h3>
+
+<input id="user" placeholder="Admin Username"><br>
+<input id="pass" type="password" placeholder="Password"><br>
 
 <button onclick="login()">Login</button>
+
+<p id="msg" style="color:red;"></p>
+
+</div>
 
 <script>
 
@@ -21,13 +73,13 @@ function login(){
 var u = document.getElementById("user").value;
 var p = document.getElementById("pass").value;
 
-if(u=="admin" && p=="1234")
+if(u === "admin" && p === "1234")
 {
-window.location="dashboard.html";
+window.location.href = "dashboard.html";
 }
 else
 {
-alert("Wrong Login");
+document.getElementById("msg").innerText = "❌ Wrong Username or Password";
 }
 
 }
