@@ -42,6 +42,30 @@
 
 let acc = 1000;
 
+// Auto create 100 customers
+window.onload = function () {
+
+let table = document.getElementById("accounts");
+
+for(let i=1;i<=100;i++){
+
+acc++;
+
+let row=`
+<tr>
+<td>${acc}</td>
+<td>Customer ${i}</td>
+<td>Main Branch</td>
+<td>${1000 + (i*50)}</td>
+</tr>
+`;
+
+table.innerHTML += row;
+
+}
+
+};
+
 function createAccount(){
 
 let name=document.getElementById("name").value;
