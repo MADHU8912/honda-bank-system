@@ -1,0 +1,21 @@
+function deposit(accountNo, amount){
+
+let acc = accounts.find(a => a.number === accountNo);
+
+if(!acc){
+console.log("Account not found");
+return;
+}
+
+acc.balance += amount;
+
+transactions.push({
+type:"Deposit",
+account:accountNo,
+amount:amount
+});
+
+console.log("Deposit Successful");
+console.log("Balance:", acc.balance);
+
+}
