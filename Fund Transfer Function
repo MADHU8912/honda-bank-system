@@ -1,0 +1,29 @@
+function fundTransfer() {
+
+    let fromAccount = parseInt(document.getElementById("fromAccount").value);
+    let toAccount = parseInt(document.getElementById("toAccount").value);
+    let amount = parseFloat(document.getElementById("amount").value);
+
+    // ✔ Check if account exists
+    let sender = accounts.find(acc => acc.number === fromAccount);
+    let receiver = accounts.find(acc => acc.number === toAccount);
+
+    if (!sender || !receiver) {
+        alert("Account does not exist");
+        return;
+    }
+
+    // ✔ Check sufficient balance
+    if (sender.balance < amount) {
+        alert("Insufficient balance");
+        return;
+    }
+
+    // ✔ Auto balance update
+    sender.balance -= amount;
+    receiver.balance += amount;
+
+    alert("Fund Transfer Successful");
+
+    console.log("Updated Accounts:", accounts);
+}
