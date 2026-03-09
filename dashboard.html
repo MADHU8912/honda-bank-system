@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Honda Bank Dashboard</title>
+<title>LVR Worknet Dashboard</title>
 <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 
-<body onload="loadAccounts()">
+<body>
 
-<h1>Honda Bank Dashboard</h1>
+<h1>LVR WORKNET ADMIN PANEL</h1>
+
+<div class="box">
 
 <h3>Create Account</h3>
 
@@ -18,16 +19,11 @@
 
 <button onclick="createAccount()">Create Account</button>
 
-<hr>
-
-<h3>Search Account</h3>
-
-<input id="search" placeholder="Account Number">
-<button onclick="searchAccount()">Search</button>
-
-<div id="result"></div>
+</div>
 
 <hr>
+
+<h3>Accounts</h3>
 
 <table border="1" width="80%" align="center">
 
@@ -36,12 +32,40 @@
 <th>Name</th>
 <th>Branch</th>
 <th>Balance</th>
-<th>Action</th>
 </tr>
 
 <tbody id="accounts"></tbody>
 
 </table>
+
+<script>
+
+let acc = 1000;
+
+function createAccount(){
+
+let name=document.getElementById("name").value;
+let branch=document.getElementById("branch").value;
+let balance=document.getElementById("balance").value;
+
+acc++;
+
+let table=document.getElementById("accounts");
+
+let row=`
+<tr>
+<td>${acc}</td>
+<td>${name}</td>
+<td>${branch}</td>
+<td>${balance}</td>
+</tr>
+`;
+
+table.innerHTML += row;
+
+}
+
+</script>
 
 </body>
 </html>
