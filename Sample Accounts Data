@@ -1,0 +1,7 @@
+let accounts = [
+ {number:1001,name:"Ravi",balance:5000},
+ {number:1002,name:"Kumar",balance:3000},
+ {number:1003,name:"Sita",balance:7000}
+];
+
+let transactions = [];
