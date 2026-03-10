@@ -31,3 +31,11 @@ document.getElementById("bal"+to).innerText = receiver.balance;
 alert("Transfer Successful");
 
 }
+{
+ "accounts":[
+  {"id":1001,"name":"Ravi","branch":"Delhi","balance":5000},
+  {"id":1002,"name":"Amit","branch":"Mumbai","balance":7000},
+  {"id":1003,"name":"John","branch":"London","balance":9000},
+  {"id":1004,"name":"Sara","branch":"Dubai","balance":6000}
+ ]
+}
