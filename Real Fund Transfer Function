@@ -28,8 +28,7 @@ receiver.balance += amount;
 document.getElementById("bal"+from).innerText = sender.balance;
 document.getElementById("bal"+to).innerText = receiver.balance;
 
-alert("Transfer Successful");
-
+alert("Transfer Successful")
 }
 {
  "accounts":[
