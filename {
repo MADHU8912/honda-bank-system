@@ -1,0 +1,205 @@
+[33mcommit 2a6c2a52701949856dbf23da622e9ac2018cf722[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:52:19 2026 +0530
+
+    Rename Deposit Function to Deposit Function .html
+
+[33mcommit 8269dbd52085d5805012c338e8582e6fdb2aef84[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:49:30 2026 +0530
+
+    Remove extra newline in HTML Inputs
+
+[33mcommit 6627447a7e8969ad283166a3243014921ad6fbf9[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:45:29 2026 +0530
+
+    Implement fund transfer function for accounts
+
+[33mcommit 9ce7e3cc46761ade7ee6c9e075ff669068981f77[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:44:48 2026 +0530
+
+    Implement createAccount function to add accounts
+
+[33mcommit 63966f22e742936b3111286333b5d2601d6af84f[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:44:07 2026 +0530
+
+    Add account initialization on window load
+    
+    Initialize accounts on window load and populate the table with account details.
+
+[33mcommit 7cd321d72ffc93f9e87e59140dc84384f4b58954[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:43:23 2026 +0530
+
+    Add account variables for fund transfer script
+
+[33mcommit d5a988639a279847460effceaccc2b1d4c2e883e[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:31:00 2026 +0530
+
+    Delete Withdraw Function
+
+[33mcommit 7676137273a18c8e181429bac39ef5e8d9a6e3c8[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:30:47 2026 +0530
+
+    Delete Transaction History
+
+[33mcommit 23612a3c136b95fac545eab00e6dc90af43976e9[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:28:54 2026 +0530
+
+    Delete Sample Accounts Data
+
+[33mcommit 4ed2c7ef6762474a50a326471021dac98eac6825[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:28:35 2026 +0530
+
+    Delete Account Search
+
+[33mcommit fb61f7d626aaee7d17a714a1a1d9a6f4cd4c2d1e[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:25:41 2026 +0530
+
+    Add searchAccount function to find account details
+
+[33mcommit d3c79b90df175437820b74a5d8b4704a60af462a[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:25:04 2026 +0530
+
+    Add transactionHistory function to log transactions
+
+[33mcommit c091c1984c4c009ba1a5255f18df01940a2be51e[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:24:30 2026 +0530
+
+    Implement fund transfer function
+
+[33mcommit d64b403a2872a125d699219f99a153c14955b164[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:23:56 2026 +0530
+
+    Implement withdraw function for account transactions
+
+[33mcommit fe9d3f5deb1df9f941678b2cac01704c819bebd1[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:23:23 2026 +0530
+
+    Implement deposit function for account management
+
+[33mcommit b4277db1c28c342b535eca5fd8d67f3bf0df3074[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:22:53 2026 +0530
+
+    Add sample accounts and transactions data
+
+[33mcommit 6f4aa28a15b297acd760970c937772a141bf9547[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:18:08 2026 +0530
+
+    Add HTML inputs for fund transfer functionality
+
+[33mcommit d2abfd49b404b46352ebd4ffb2bc3b89c112bfbf[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:17:19 2026 +0530
+
+    Implement fund transfer function with validations
+
+[33mcommit 980291d97842bf4fdc9c8054007e1b2f495b0a6b[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:10:39 2026 +0530
+
+    Add fundTransfer function for account transfers
+
+[33mcommit 1ec60197bc86937f3575a7e49b4f6f17e3b157a8[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:10:09 2026 +0530
+
+    Add fund transfer inputs and button to dashboard
+
+[33mcommit 41b10f4ba8ce6f630d649c974fa2ae42d123b232[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:06:09 2026 +0530
+
+    Delete database.json
+
+[33mcommit 98af1eca91aa5e616ae6a08f582744ca312382c4[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:03:40 2026 +0530
+
+    Add script for account management and transfers
+
+[33mcommit d0bc87cd70107514e3f25a2b75aba45cc3de4c0f[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 12:02:24 2026 +0530
+
+    Add fund transfer section to dashboard
+    
+    Added a fund transfer section with input fields for account numbers and amount.
+
+[33mcommit 8b914c6c32dc1b6c57b41349ab22fdc47d01c5d0[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 11:54:44 2026 +0530
+
+    Implement auto-creation of 100 customer accounts
+    
+    Added functionality to auto-generate 100 customer accounts in the table on page load.
+
+[33mcommit 22efdb6091240cfb6ec7a94d41f61068ac1d06da[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 11:52:19 2026 +0530
+
+    Enhance login.html with styling and structure
+
+[33mcommit 83c2c8684f62dedcdebecf598ddc63d7cf33c523[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 11:42:12 2026 +0530
+
+    first commit
+
+[33mcommit ad8c2352c9be65168c7271a40db645f8b476afd7[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 11:21:46 2026 +0530
+
+    Update styles for body, headings, and buttons
+
+[33mcommit f4fed549409d9e02add794af03970d94e38b3f3a[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 11:21:09 2026 +0530
+
+    Update dashboard title and structure for LVR Worknet
+
+[33mcommit 4cad62cf8c8a9124f3b5fb2501a55d074c67ffbe[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Mon Mar 9 11:20:37 2026 +0530
+
+    Update bank title and login script structure
+
+[33mcommit e48a792c3c0b8c8c20f130a65ebb75fa50f6c820[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Fri Mar 6 16:57:57 2026 +0530
+
+    Update styles for body, h1, input, and button
+
+[33mcommit 17394e7d949ae8a67d4b6710cdc80ddbb3d30e3c[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Fri Mar 6 16:56:57 2026 +0530
+
+    Refactor dashboard HTML for account creation and search
+
+[33mcommit ee487e215e551d35c41369a912a6674b0b81340c[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Fri Mar 6 16:55:56 2026 +0530
+
+    Implement admin login feature in index.html
+    
+    Added admin login functionality with username and password fields.
+
+[33mcommit 21782222094c781139a44f727d859c3c9bc47050[m
+Author: MADHU8912 <nikhilabba12@gmail.com>
+Date:   Fri Mar 6 16:48:13 2026 +0530
+
+    first bank system
